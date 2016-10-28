@@ -64,16 +64,28 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " vundle plugins must be placed between vundle#begin() and  vundle#end()
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'tyrannicaltoucan/vim-quantum'
+
 Plugin 'Lokaltog/vim-powerline'
+
 Plugin 'nathanaelkane/vim-indent-guides'
+
+Plugin 'kshenoy/vim-signature'
 Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
+
 Plugin 'majutsushi/tagbar'
+
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'terryma/vim-multiple-cursors'
+
 Plugin 'scrooloose/nerdtree'
 Plugin 'fholgado/minibufexpl.vim'
+
 Plugin 'gcmt/wildfire.vim'
+
+Plugin 'scrooloose/nerdcommenter'
+
 call vundle#end()
 filetype plugin indent on
 " Plugin end
@@ -83,6 +95,9 @@ filetype plugin indent on
 
 
 " color scheme
+
+
+" vim-quantum 
 set background=dark
 colorscheme quantum
 
@@ -107,6 +122,7 @@ set cursorline
 set cursorcolumn
 " highlight search 
 set hlsearch
+":nohlsearch
 
 " no wrap
 set nowrap
