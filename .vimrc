@@ -62,9 +62,10 @@ set wildmenu
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 " vundle plugins must be placed between vundle#begin() and  vundle#end()
+call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tyrannicaltoucan/vim-quantum'
-lugin 'Lokaltog/vim-powerline'
+Plugin 'Lokaltog/vim-powerline'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
 Plugin 'majutsushi/tagbar'
