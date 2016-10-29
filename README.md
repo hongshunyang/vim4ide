@@ -8,6 +8,7 @@ use vim as ide
 #### macvim
 
 ```shell
+brew install python
 brew install macvim --with-override-system-vim
 ```
 #### vim plugins
