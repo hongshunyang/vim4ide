@@ -97,7 +97,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
-
+Plugin 'Valloric/YouCompleteMe'
 
 
 call vundle#end()
@@ -244,7 +244,6 @@ let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
 let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 " " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsUsePythonVersion = 3
 
 
 
