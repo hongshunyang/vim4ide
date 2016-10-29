@@ -2,7 +2,7 @@
 
 use vim as ide
 
-> maybe you like [vimAwesome](http://vimawesome.com/ title='vimAwesome').
+> maybe you like [vimAwesome](http://vimawesome.com).
 
 
 
