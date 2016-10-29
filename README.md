@@ -10,6 +10,15 @@ use vim as ide
 ```shell
 brew install macvim --with-override-system-vim
 ```
+#### vim plugins
+
+```shell
+_placed .vimrc_
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim
+:PluginInstall
+```
+
 #### YouCompleteMe
 
 > support C-family language,GO,Typescript,Javascript
