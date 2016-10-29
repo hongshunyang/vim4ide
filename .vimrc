@@ -94,12 +94,6 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'easymotion/vim-easymotion'
 
 
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-
-
-
-
 call vundle#end()
 filetype plugin indent on
 " Plugin end
@@ -234,24 +228,5 @@ map <Leader>bl :MBEToggle<cr>
 " Plugin wildfire
 map <SPACE> <Plug>(wildfire-fuel)
 vmap <S-SPACE> <Plug>(wildfire-water)
-
-" Plugin ultisnips
-
-" Trigger configuration. Do not use <tab> if you use
-" https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<leader><tab>"
-let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
-let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
-" " If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsUsePythonVersion = 3
-
-
-
-
-
-
-
-
 
 
