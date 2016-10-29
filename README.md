@@ -2,6 +2,10 @@
 
 use vim as ide
 
+> maybe you like [vimAwesome](http://vimawesome.com/ vimAwesome).
+
+
+
 ### How to setup
 
 
