@@ -66,6 +66,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tyrannicaltoucan/vim-quantum'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomasr/molokai'
+Plugin 'vim-scripts/phd'
 
 Plugin 'Lokaltog/vim-powerline'
 
@@ -85,6 +88,17 @@ Plugin 'fholgado/minibufexpl.vim'
 Plugin 'gcmt/wildfire.vim'
 
 Plugin 'scrooloose/nerdcommenter'
+
+
+Plugin 'suan/vim-instant-markdown'
+Plugin 'easymotion/vim-easymotion'
+
+
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+
+
 
 call vundle#end()
 filetype plugin indent on
@@ -127,7 +141,7 @@ set hlsearch
 " no wrap
 set nowrap
 
-"let g:Powerline_colorscheme=''
+"let g:Powerline_colorscheme='quantum'
 
 
 
@@ -145,6 +159,7 @@ set shiftwidth=4
 set softtabstop=4
 
 " code fold
+" za Toggle Codes,zM close all codes,zR open all codes
 "set foldmethod=indent
 set foldmethod=syntax
 set nofoldenable
@@ -220,17 +235,16 @@ map <Leader>bl :MBEToggle<cr>
 map <SPACE> <Plug>(wildfire-fuel)
 vmap <S-SPACE> <Plug>(wildfire-water)
 
+" Plugin ultisnips
 
-
-
-
-
-
-
-
-
-
-
+" Trigger configuration. Do not use <tab> if you use
+" https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<leader><tab>"
+let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
+let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
+" " If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsUsePythonVersion = 3
 
 
 
