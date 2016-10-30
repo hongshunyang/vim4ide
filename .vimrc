@@ -42,10 +42,11 @@ nnoremap <Leader>jw <C-W>j
 nmap <Leader>M %
 
 " <Esc> 
-inoremap <Leader>i <Esc>   
+inoremap ii <Esc>   
 
 " effective immediately 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
+"here is a bug esc and autocmd,when <leader>w save file,statusline hide
 
 " Others 
 
@@ -72,7 +73,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
 
-"Plugin 'Lokaltog/vim-powerline'
+Plugin 'bling/vim-airline'
 
 Plugin 'nathanaelkane/vim-indent-guides'
 
@@ -103,7 +104,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'bling/vim-airline'
+
 call vundle#end()
 filetype plugin indent on
 " Plugin end
@@ -270,8 +271,17 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn)$',
     \ 'file': '\v\.(exe|so|dll)$',
-    \ 'link': '',
+    \ 'link': 'some_bad_symbolic_links',
     \ }
 "let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
 "let g:ctrlp_user_command = 'dir %s /-n /b /s /a-d'  " Windows
+"
+"Plugin YouCompleteMe
+let g:ycm_complete_in_comments=1
+let g:ycm_confirm_extra_conf=0
+let g:ycm_collect_identifiers_from_tags_files=0
+let g:ycm_cache_omnifunc=0
+let g:ycm_min_num_of_chars_for_completion=1
+let g:ycm_seed_identifiers_with_syntax=1
+set completeopt-=preview
 
