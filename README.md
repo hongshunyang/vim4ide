@@ -43,8 +43,8 @@ brew install iterm2
 ```
 > config settings as below
 
-![iterm2](./iterm2.1.png)
-![iterm2](./iterm2.2.png)
+![iterm2](./misc/iterm2.1.png)
+![iterm2](./misc/iterm2.2.png)
 
 ### ScreenShot
 ![vim4ide](./screenshot.png)
