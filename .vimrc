@@ -100,6 +100,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
