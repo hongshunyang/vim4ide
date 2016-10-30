@@ -124,7 +124,11 @@ syntax on
 "vim-color-solarized
 
 set background=dark
-"let g:solarized_termtrans=1
+
+" if you use terminal.app umcomment 2 below
+"set t_Co=256
+"let g:solarized_termcolors=256
+
 colorscheme solarized
 
 " vim-quantum 
