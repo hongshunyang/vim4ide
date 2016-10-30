@@ -105,6 +105,8 @@ Plugin 'scrooloose/syntastic'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 
+Plugin 'godlygeek/tabular'
+
 call vundle#end()
 filetype plugin indent on
 " Plugin end
