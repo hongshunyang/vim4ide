@@ -13,7 +13,7 @@ use vim as ide
 
 ```shell
 brew install python
-brew install macvim --with-override-system-vim
+brew install macvim --with-python --with-override-system-vim
 ```
 #### vim plugins
 
