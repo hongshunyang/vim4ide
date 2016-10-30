@@ -8,7 +8,14 @@ let mapleader=";"
 "H move the cursor to top of the window
 "M middle 
 "L bottom
- 
+
+
+"diw delete in word
+"caw change all word
+"yi) yank all text inside the ) 
+"di) delete all text inside )
+"va''
+
 " file type detection
 
 " turn on detection
@@ -114,6 +121,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'godlygeek/tabular'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
