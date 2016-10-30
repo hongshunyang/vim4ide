@@ -42,7 +42,7 @@ nnoremap <Leader>jw <C-W>j
 nmap <Leader>M %
 
 " <Esc> 
-inoremap <leader>e <Esc>   
+inoremap <Leader>i <Esc>   
 
 " effective immediately 
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
@@ -72,7 +72,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
 Plugin 'vim-scripts/phd'
 
-Plugin 'Lokaltog/vim-powerline'
+"Plugin 'Lokaltog/vim-powerline'
 
 Plugin 'nathanaelkane/vim-indent-guides'
 
@@ -103,7 +103,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 
 Plugin 'ctrlpvim/ctrlp.vim'
-
+Plugin 'bling/vim-airline'
 call vundle#end()
 filetype plugin indent on
 " Plugin end
