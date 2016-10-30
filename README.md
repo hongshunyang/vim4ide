@@ -33,6 +33,16 @@ home brew install cmake
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer  --gocode-completer --tern-completer
 ```
+
+### Optional
+
+```shell
+brew install iterm2
+```
+> config settings as below
+
+![iterm2](./iterm2.png)
+
 ### ScreenShot
 ![vim4ide](./screenshot.png)
 

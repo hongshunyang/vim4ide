@@ -1,5 +1,5 @@
 " define the prefix of shortcut key
-let mapleader = ";"
+let mapleader=";"
 
 " file type detection
 
@@ -117,10 +117,20 @@ filetype plugin indent on
 
 " color scheme
 
+" Syntax highlight & color scheme
+syntax enable
+syntax on
+
+"vim-color-solarized
+
+set background=dark
+"let g:solarized_termtrans=1
+colorscheme solarized
 
 " vim-quantum 
-set background=dark
-colorscheme quantum
+"colorscheme quantum
+
+
 
 " cursor
 set gcr=a:block-blinkon0
@@ -150,12 +160,6 @@ nnoremap <Leader>g :set hlsearch!<CR>
 set nowrap
 
 "let g:Powerline_colorscheme='quantum'
-
-
-
-" Syntax highlight & color scheme
-syntax enable
-syntax on
 
 " indent
 filetype indent on
@@ -258,25 +262,25 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
 
 "Plugin CtrlP
-let g:ctrlp_map = '<Leader>ls'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_switch_buffer = 'et'
+let g:ctrlp_map='<Leader>ls'
+let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_switch_buffer='et'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 "set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = {
+let g:ctrlp_custom_ignore='\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore={
     \ 'dir':  '\v[\/]\.(git|hg|svn)$',
     \ 'file': '\v\.(exe|so|dll)$',
     \ 'link': 'some_bad_symbolic_links',
     \ }
-"let g:ctrlp_user_command = 'find %s -type f'        " MacOSX/Linux
-"let g:ctrlp_user_command = 'dir %s /-n /b /s /a-d'  " Windows
+"let g:ctrlp_user_command='find %s -type f'        " MacOSX/Linux
+"let g:ctrlp_user_command='dir %s /-n /b /s /a-d'  " Windows
 "
 "Plugin YouCompleteMe
 let g:ycm_complete_in_comments=1
