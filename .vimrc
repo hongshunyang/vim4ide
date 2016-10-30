@@ -1,6 +1,14 @@
 " define the prefix of shortcut key
 let mapleader=";"
 
+"<CR>E scroll window down
+"<CR>Y scroll window up
+"<CR>F scroll down one page
+"<CR>B scroll up one page
+"H move the cursor to top of the window
+"M middle 
+"L bottom
+ 
 " file type detection
 
 " turn on detection
@@ -184,13 +192,13 @@ set nofoldenable
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
-nmap <silent> <Leader>i <Plug>IndentGuidesToggle
+nmap <silent> <Leader>dt <Plug>IndentGuidesToggle
     
 " plugin tagbar
 " tagbar placed left 
 let tagbar_left=1
 " tagbar toggle  
-nnoremap <Leader>ilt :TagbarToggle<CR>
+nnoremap <Leader>a :TagbarToggle<CR>
 " tagbar width
 let tagbar_width=32
 " tagbar simple
