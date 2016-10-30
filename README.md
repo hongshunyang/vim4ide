@@ -4,6 +4,14 @@ use vim as ide
 
 > maybe you like [vimAwesome](http://vimawesome.com).
 
+## Links
+
+* [vim game](http://vim-adventures.com/)
+* [user manual](https://vimhelp.appspot.com/usr_toc.txt.html)
+* [quick reference](https://vimhelp.appspot.com/quickref.txt.html)
+
+
+
 ## TODO
 
 * support tmux
