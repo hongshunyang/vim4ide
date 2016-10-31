@@ -17,6 +17,7 @@ use vim as ide
 * support tmux
 * support R
 * [vim-R-tmux](http://manuals.bioinformatics.ucr.edu/home/programming-in-r/vim-r)
+
 ### How to setup
 
 
