@@ -7,6 +7,7 @@ use vim as ide
 ## Links
 
 * [vim game](http://vim-adventures.com/)
+* [vimGenius](http://www.vimgenius.com/)
 * [user manual](https://vimhelp.appspot.com/usr_toc.txt.html)
 * [quick reference](https://vimhelp.appspot.com/quickref.txt.html)
 
