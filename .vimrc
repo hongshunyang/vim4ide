@@ -183,12 +183,22 @@ set nowrap
 
 " indent
 filetype indent on
+"set expandtab ts=4 sw=4 ai
 
-" tab 2 space
-set expandtab
+" show existing tab with 4 spaces width
 set tabstop=4
+" when indenting with '>', use 4 spaces width
 set shiftwidth=4
+" Sets the number of columns for a TAB.
 set softtabstop=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
+"You can replace all the tabs with spaces in the entire file with
+" :%retab
+
+
+
 
 " code fold
 " za Toggle Codes,zM close all codes,zR open all codes
