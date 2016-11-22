@@ -1,6 +1,12 @@
 " define the prefix of shortcut key
 let mapleader=";"
 
+" play macro
+" qt ##register macro t and start recording
+" q  ##record end
+" @t ## play t 
+
+
 "<CR>E scroll window down
 "<CR>Y scroll window up
 "<CR>F scroll down one page
