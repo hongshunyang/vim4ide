@@ -1,6 +1,12 @@
 " define the prefix of shortcut key
 let mapleader=";"
 
+" indent
+" :10,100>
+" :20,80<
+" << left tab indent 
+" >> right tab indent
+
 " play macro
 " qt ##register macro t and start recording
 " q  ##record end
@@ -32,6 +38,7 @@ filetype plugin on
 " vim shortcut key
 nmap LB 0
 nmap LB $
+
 
 " copy select content to clipboard
 vnoremap <Leader>y "+y
