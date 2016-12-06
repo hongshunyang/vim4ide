@@ -6,6 +6,9 @@ let mapleader=";"
 " :20,80<
 " << left tab indent 
 " >> right tab indent
+" v mode chose multi rows < or > left or right
+
+
 
 " play macro
 " qt ##register macro t and start recording
