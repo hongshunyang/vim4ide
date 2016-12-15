@@ -81,6 +81,10 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 
 " Others 
 
+"delete key not working
+
+set backspace=indent,eol,start
+
 " turn on instant search
 set incsearch
 " ignore case 
