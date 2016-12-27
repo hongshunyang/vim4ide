@@ -143,6 +143,10 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-ragtag'
+Plugin 'tweekmonster/django-plus.vim'
+"Plugin 'othree/xml.vim'
 call vundle#end()
 filetype plugin indent on
 " Plugin end
@@ -200,6 +204,12 @@ nnoremap <Leader>g :set hlsearch!<CR>
 set nowrap
 
 "let g:Powerline_colorscheme='quantum'
+
+"autocmd FileType python set sw=4
+"autocmd FileType python set ts=4
+"autocmd FileType python set sts=4
+
+set autoindent
 
 " indent
 filetype indent on
@@ -301,11 +311,14 @@ vmap <S-SPACE> <Plug>(wildfire-water)
 
 " Trigger configuration. Do not use <tab> if you use
 " https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<leader><tab>"
-let g:UltiSnipsJumpForwardTrigger="<leader><tab>"
-let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 " " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+let g:UltiSnipsExpandTrigger       = "<c-j>"
+let g:UltiSnipsJumpForwardTrigger  = "<c-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-p>"
+let g:UltiSnipsListSnippets        = "<c-k>" "List possible snippets based on current file
+
 
 "Plugin syntax
 set statusline+=%#warningmsg#
@@ -333,11 +346,15 @@ let g:ctrlp_custom_ignore={
 "let g:ctrlp_user_command='dir %s /-n /b /s /a-d'  " Windows
 "
 "Plugin YouCompleteMe
-let g:ycm_complete_in_comments=1
 let g:ycm_confirm_extra_conf=0
-let g:ycm_collect_identifiers_from_tags_files=0
-let g:ycm_cache_omnifunc=0
+"let g:ycm_cache_omnifunc=0
 let g:ycm_min_num_of_chars_for_completion=1
-let g:ycm_seed_identifiers_with_syntax=1
-set completeopt-=preview
+let g:ycm_collect_identifiers_from_tags_files = 1 " Let YCM read tags from Ctags file
+let g:ycm_use_ultisnips_completer = 1 " Default 1, just ensure
+let g:ycm_seed_identifiers_with_syntax = 1 " Completion for programming language's keyword
+let g:ycm_complete_in_comments = 1 " Completion in comments
+let g:ycm_complete_in_strings = 1 " Completion in string
 
+set completeopt-=preview
+"Plugin ragtag
+let g:ragtag_global_maps = 1
